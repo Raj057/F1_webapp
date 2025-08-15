@@ -27,3 +27,6 @@ def pitstop_summary(year: int, gp: str):
 @router.get("/driver-profile/{driver_name}")
 def driver_profile(driver_name: str):
     return driver_service.get_driver_profile(driver_name)
+@router.get("/{year}/{gp_name}/positions")
+def race_positions(year: int, gp_name: str):
+    return race_service.get_race_positions(year, gp_name)

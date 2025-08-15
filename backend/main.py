@@ -15,6 +15,10 @@ app.add_middleware(
 )
 
 app.include_router(race_router, prefix="/race")
+from routes import circuit as circuit_router
+
+app.include_router(circuit_router.router)
+
 
 @app.get("/")
 def root():

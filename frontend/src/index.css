@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Formula1-Regular';
+  src: url('./assets/Formula1-Regular_web_0.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Formula1-Bold';
+  src: url('./assets/Formula1-Bold_web_0.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Formula1-Wide';
+  src: url('./assets/Formula1-Wide_web_0.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply globally */
+body {
+  font-family: 'Formula1-Regular', sans-serif;
+}
